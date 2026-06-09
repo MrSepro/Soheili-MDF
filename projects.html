@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="fa" dir="rtl">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>پروژه ها | Soheili MDF</title>
+  <meta name="description" content="صفحه معرفی نمونه پروژه های اجرا شده در حوزه کابینت و دکوراسیون داخلی">
+  <meta name="robots" content="index,follow">
+  <meta name="theme-color" content="#1A1A1A">
+  <meta property="og:title" content="پروژه ها | Soheili MDF">
+  <meta property="og:description" content="صفحه معرفی نمونه پروژه های اجرا شده در حوزه کابینت و دکوراسیون داخلی">
+  <meta property="og:type" content="website">
+  <meta property="og:locale" content="fa_IR">
+  <link rel="stylesheet" href="assets/css/style.css">
+</head>
+<body>
+  <header class="site-header">
+    <div class="container header-inner">
+      <a class="logo" href="index.html" aria-label="بازگشت به صفحه اصلی">
+        <span class="logo-mark">S</span>
+        <span class="logo-text">
+          <strong>Soheili MDF</strong>
+          <small>متریال و مشاوره کابینت</small>
+        </span>
+      </a>
+
+      <button class="nav-toggle" type="button" aria-expanded="false" aria-controls="main-nav">
+        <span></span>
+        <span></span>
+        <span></span>
+      </button>
+
+      <nav class="main-nav" id="main-nav" aria-label="منوی اصلی">
+        <ul>
+          <li><a href="index.html">خانه</a></li>
+          <li><a href="products.html">محصولات</a></li>
+          <li><a href="projects.html">پروژه ها</a></li>
+          <li><a href="design-service.html">خدمات طراحی</a></li>
+          <li><a href="about.html">درباره ما</a></li>
+          <li><a href="contact.html">تماس با ما</a></li>
+        </ul>
+      </nav>
+
+      <a class="header-cta" href="contact.html">دریافت مشاوره</a>
+    </div>
+  </header>
+
+  <main>
+    <section class="page-hero">
+      <div class="container">
+        <p class="breadcrumb">خانه / پروژه ها</p>
+        <h1>نمونه پروژه ها</h1>
+        <p>
+          این صفحه برای نمایش پروژه های تکمیل شده، نوع پروژه، متراژ و توضیح کوتاه
+          هر نمونه کار ساخته شده است.
+        </p>
+      </div>
+    </section>
+
+    <section class="page-content">
+      <div class="container">
+        <div class="section-heading">
+          <p class="section-eyebrow">پروژه ها</p>
+          <h2>لیست پروژه ها</h2>
+          <p class="section-text">
+            این داده ها فعلا نمونه هستند تا ساختار صفحه آماده باشد؛ بعدا تصاویر و اطلاعات واقعی را جایگزین می کنیم.
+          </p>
+        </div>
+
+        <div class="filters-bar" aria-label="فیلتر پروژه ها">
+          <label class="field">
+            <span class="field-label">جستجو</span>
+            <input id="projectSearch" class="field-input" type="search" placeholder="عنوان پروژه یا نوع پروژه" autocomplete="off">
+          </label>
+
+          <label class="field">
+            <span class="field-label">مرتب سازی</span>
+            <select id="projectSort" class="field-input">
+              <option value="default">پیش فرض</option>
+              <option value="area-desc">متراژ: بیشترین</option>
+              <option value="area-asc">متراژ: کمترین</option>
+            </select>
+          </label>
+        </div>
+
+        <div class="filter-chips" id="projectTypeChips" aria-label="نوع پروژه">
+          <button class="chip is-active" type="button" data-type="all">همه</button>
+          <button class="chip" type="button" data-type="کابینت آشپزخانه">کابینت آشپزخانه</button>
+          <button class="chip" type="button" data-type="کمد دیواری">کمد دیواری</button>
+          <button class="chip" type="button" data-type="فضای اداری">فضای اداری</button>
+          <button class="chip" type="button" data-type="دکور">دکور</button>
+        </div>
+
+        <p class="results-meta" id="projectsMeta" aria-live="polite"></p>
+
+        <div class="projects-grid" id="projectsGrid" aria-label="لیست پروژه ها"></div>
+
+        <div class="empty-state" id="projectsEmpty" hidden>
+          <h3>پروژه ای پیدا نشد</h3>
+          <p>عبارت جستجو یا فیلتر را تغییر دهید و دوباره امتحان کنید.</p>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container footer-grid">
+      <div class="footer-brand">
+        <a class="logo footer-logo" href="index.html" aria-label="بازگشت به صفحه اصلی">
+          <span class="logo-mark">S</span>
+          <span class="logo-text">
+            <strong>Soheili MDF</strong>
+            <small>متریال و مشاوره کابینت</small>
+          </span>
+        </a>
+        <p class="footer-text">
+          تامین کننده تخصصی MDF، متریال کابینت و خدمات مشاوره برای انتخاب درست و اجرای مطمئن.
+        </p>
+      </div>
+
+      <div class="footer-col">
+        <h2 class="footer-title">لینک های سریع</h2>
+        <ul class="footer-links">
+          <li><a href="products.html">محصولات</a></li>
+          <li><a href="projects.html">پروژه ها</a></li>
+          <li><a href="design-service.html">خدمات طراحی</a></li>
+          <li><a href="about.html">درباره ما</a></li>
+        </ul>
+      </div>
+
+      <div class="footer-col">
+        <h2 class="footer-title">دسته ها</h2>
+        <ul class="footer-links">
+          <li><a href="products.html">MDF خام</a></li>
+          <li><a href="products.html">MDF روکش دار</a></li>
+          <li><a href="products.html">هایگلاس</a></li>
+          <li><a href="products.html">یراق آلات</a></li>
+        </ul>
+      </div>
+
+      <div class="footer-col">
+        <h2 class="footer-title">تماس</h2>
+        <ul class="footer-links">
+          <li><a href="contact.html">ثبت درخواست مشاوره</a></li>
+          <li><span class="footer-muted">شماره: ثبت نشده</span></li>
+          <li><span class="footer-muted">اینستاگرام: ثبت نشده</span></li>
+        </ul>
+      </div>
+    </div>
+
+    <div class="container footer-bottom">
+      <p>تمامی حقوق محفوظ است.</p>
+    </div>
+  </footer>
+
+  <script src="assets/js/main.js"></script>
+</body>
+</html>
