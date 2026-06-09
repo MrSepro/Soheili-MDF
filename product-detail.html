@@ -4,11 +4,11 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>جزئیات محصول | Soheili MDF</title>
-  <meta name="description" content="صفحه جزئیات محصول برای نمایش مشخصات کامل متریال و یراق آلات">
-  <meta name="robots" content="noindex,follow">
+  <meta name="description" content="مشخصات فنی، ابعاد، ضخامت و توضیحات تکمیلی محصول در Soheili MDF.">
+  <meta name="robots" content="index,follow">
   <meta name="theme-color" content="#1A1A1A">
   <meta property="og:title" content="جزئیات محصول | Soheili MDF">
-  <meta property="og:description" content="صفحه جزئیات محصول برای نمایش مشخصات کامل متریال و یراق آلات">
+  <meta property="og:description" content="مشخصات فنی، ابعاد، ضخامت و توضیحات تکمیلی محصول در Soheili MDF.">
   <meta property="og:type" content="website">
   <meta property="og:locale" content="fa_IR">
   <link rel="stylesheet" href="assets/css/style.css">
@@ -59,11 +59,8 @@
     <section class="page-content">
       <div class="container">
         <div class="detail-layout">
-          <div class="detail-box">
-            <div class="product-media" aria-hidden="true"></div>
-            <div class="detail-note">
-              تصویر محصول فعلا نمونه است و بعدا با عکس واقعی جایگزین می شود.
-            </div>
+          <div class="detail-media" id="productMedia">
+            <!-- تصویر محصول با JS تزریق می‌شود -->
           </div>
 
           <div class="detail-box">
@@ -78,6 +75,14 @@
               <a class="btn btn-secondary" href="products.html">بازگشت به محصولات</a>
             </div>
           </div>
+        </div>
+
+        <div class="related-section" id="relatedSection" hidden>
+          <div class="section-heading">
+            <p class="section-eyebrow">محصولات مشابه</p>
+            <h2>شاید این موارد هم برای شما کاربردی باشد</h2>
+          </div>
+          <div class="products-grid" id="relatedProductsGrid"></div>
         </div>
 
         <div class="empty-state" id="productNotFound" hidden>
@@ -130,8 +135,8 @@
         <h2 class="footer-title">تماس</h2>
         <ul class="footer-links">
           <li><a href="contact.html">ثبت درخواست مشاوره</a></li>
-          <li><span class="footer-muted">شماره: ثبت نشده</span></li>
-          <li><span class="footer-muted">اینستاگرام: ثبت نشده</span></li>
+          <li><span class="footer-muted">شماره: ۰۹۱۲-XXX-XXXX</span></li>
+          <li><span class="footer-muted">اینستاگرام: Soheili_MDF</span></li>
         </ul>
       </div>
     </div>

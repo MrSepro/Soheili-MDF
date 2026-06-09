@@ -73,6 +73,7 @@ document.addEventListener("DOMContentLoaded", function () {
       size: "183×366",
       finish: "خام",
       shortSpec: "مناسب کابینت و دکور",
+      image: "assets/images/خام.jpg",
       description: "این محصول نمونه است تا ساختار صفحه آماده باشد. بعدا مشخصات دقیق، قیمت و تصاویر واقعی جایگزین می شود."
     },
     {
@@ -84,6 +85,7 @@ document.addEventListener("DOMContentLoaded", function () {
       size: "183×366",
       finish: "روکش طرح چوب",
       shortSpec: "ظاهر گرم برای فضاهای داخلی",
+      image: "assets/images/طرح چوب.jpg",
       description: "برای پروژه هایی که ظاهر چوبی می خواهند و در عین حال اجرای ساده تر لازم است."
     },
     {
@@ -95,6 +97,7 @@ document.addEventListener("DOMContentLoaded", function () {
       size: "122×280",
       finish: "براق",
       shortSpec: "سبک مدرن و روشن",
+      image: "assets/images/products/highgloss-white.jpg",
       description: "یک گزینه محبوب برای کابینت های مدرن با سطح براق و تمیز."
     },
     {
@@ -106,6 +109,7 @@ document.addEventListener("DOMContentLoaded", function () {
       size: "122×280",
       finish: "مقاوم",
       shortSpec: "مناسب محیط های مرطوب",
+      image: "assets/images/ضد_رطوبت.jpg",
       description: "برای فضاهایی که مقاومت در برابر رطوبت اهمیت دارد."
     },
     {
@@ -117,6 +121,7 @@ document.addEventListener("DOMContentLoaded", function () {
       size: "-",
       finish: "آرام بند",
       shortSpec: "حرکت نرم برای کشو",
+      image: "assets/images/products/hardware-drawer.jpg",
       description: "ریل نمونه برای نمایش ساختار یراق آلات در سایت. بعدا مدل ها و برندهای واقعی اضافه می شود."
     },
     {
@@ -128,6 +133,7 @@ document.addEventListener("DOMContentLoaded", function () {
       size: "-",
       finish: "آرام بند",
       shortSpec: "دوام بالا برای درب کابینت",
+      image: "assets/images/products/hardware-hinge.jpg",
       description: "لولا نمونه برای نمایش ساختار اطلاعات محصول و مسیر تماس برای مشاوره."
     },
     {
@@ -139,6 +145,7 @@ document.addEventListener("DOMContentLoaded", function () {
       size: "قطر 30 سانت",
       finish: "کاربردی",
       shortSpec: "مناسب برش تمیز",
+      image: "assets/images/products/tools-saw.jpg",
       description: "محصول نمونه از دسته ابزار و تجهیزات برای کامل شدن مسیرهای سایت."
     },
     {
@@ -150,6 +157,7 @@ document.addEventListener("DOMContentLoaded", function () {
       size: "183×366",
       finish: "خام",
       shortSpec: "برای پروژه های سنگین تر",
+      image: "assets/images/products/mdf-raw-18.jpg",
       description: "برای برخی بخش ها که استحکام بیشتری نیاز است، ضخامت بالاتر انتخاب می شود."
     }
   ];
@@ -160,6 +168,7 @@ document.addEventListener("DOMContentLoaded", function () {
       title: "پروژه آشپزخانه سبک مدرن",
       type: "کابینت آشپزخانه",
       area: 18,
+      image: "assets/images/projects/kitchen-modern.jpg",
       shortText: "ترکیب متریال روشن با یراق آلات آرام بند برای استفاده روزمره."
     },
     {
@@ -167,6 +176,7 @@ document.addEventListener("DOMContentLoaded", function () {
       title: "کمد با روکش طرح چوب",
       type: "کمد دیواری",
       area: 12,
+      image: "assets/images/projects/closet-wood.jpg",
       shortText: "طراحی کاربردی با فضای تقسیم بندی و رنگ گرم برای اتاق خواب."
     },
     {
@@ -174,6 +184,7 @@ document.addEventListener("DOMContentLoaded", function () {
       title: "دکور اداری مینیمال",
       type: "فضای اداری",
       area: 24,
+      image: "assets/images/projects/office-minimal.jpg",
       shortText: "ترکیب رنگ خنثی با جزئیات فلزی برای ظاهر حرفه ای و مدرن."
     },
     {
@@ -181,6 +192,7 @@ document.addEventListener("DOMContentLoaded", function () {
       title: "کابینت با جزئیات قاب دار",
       type: "کابینت آشپزخانه",
       area: 20,
+      image: "assets/images/projects/kitchen-classic.jpg",
       shortText: "انتخاب متریال و یراق مناسب برای دوام بالا و ظاهر کلاسیک."
     },
     {
@@ -188,6 +200,7 @@ document.addEventListener("DOMContentLoaded", function () {
       title: "تی وی وال با ترکیب متریال",
       type: "دکور",
       area: 6,
+      image: "assets/images/projects/tv-wall.jpg",
       shortText: "چیدمان ساده با نورپردازی ملایم و جزئیات چوبی."
     },
     {
@@ -195,6 +208,7 @@ document.addEventListener("DOMContentLoaded", function () {
       title: "کمد و جاکفشی ورودی",
       type: "دکور",
       area: 8,
+      image: "assets/images/projects/entry-decor.jpg",
       shortText: "طراحی کاربردی برای نظم دهی، با متریال مقاوم و ساده."
     }
   ];
@@ -221,7 +235,15 @@ document.addEventListener("DOMContentLoaded", function () {
 
     var media = document.createElement("div");
     media.className = "product-media";
-    media.setAttribute("aria-hidden", "true");
+    if (product.image) {
+      var img = document.createElement("img");
+      img.src = product.image;
+      img.alt = product.title;
+      img.loading = "lazy";
+      media.appendChild(img);
+    } else {
+      media.setAttribute("aria-hidden", "true");
+    }
 
     var body = document.createElement("div");
     body.className = "product-body";
@@ -260,7 +282,15 @@ document.addEventListener("DOMContentLoaded", function () {
 
     var media = document.createElement("div");
     media.className = "project-media";
-    media.setAttribute("aria-hidden", "true");
+    if (project.image) {
+      var img = document.createElement("img");
+      img.src = project.image;
+      img.alt = project.title;
+      img.loading = "lazy";
+      media.appendChild(img);
+    } else {
+      media.setAttribute("aria-hidden", "true");
+    }
 
     var body = document.createElement("div");
     body.className = "project-body";
@@ -604,12 +634,90 @@ document.addEventListener("DOMContentLoaded", function () {
       descEl.textContent = product.description;
     }
 
+    var mediaEl = document.getElementById("productMedia");
+    if (mediaEl) {
+      mediaEl.innerHTML = "";
+      if (product.image) {
+        var img = document.createElement("img");
+        img.src = product.image;
+        img.alt = product.title;
+        mediaEl.appendChild(img);
+      }
+    }
+
+    // محصولات مرتبط
+    var relatedGrid = document.getElementById("relatedProductsGrid");
+    var relatedSection = document.getElementById("relatedSection");
+    if (relatedGrid && relatedSection) {
+      var related = products.filter(function (p) {
+        return p.category === product.category && p.id !== product.id;
+      }).slice(0, 3);
+
+      if (related.length > 0) {
+        relatedGrid.innerHTML = "";
+        related.forEach(function (p) {
+          relatedGrid.appendChild(createProductCard(p));
+        });
+        relatedSection.hidden = false;
+      } else {
+        relatedSection.hidden = true;
+      }
+    }
+
     document.title = product.title + " | Soheili MDF";
+  }
+
+  function renderHomePage() {
+    var productsGrid = document.getElementById("featuredProductsGrid");
+    var projectsGrid = document.getElementById("homeProjectsGrid");
+
+    if (productsGrid) {
+      productsGrid.innerHTML = "";
+      // نمایش ۶ محصول اول در صفحه اصلی
+      products.slice(0, 6).forEach(function (p) {
+        productsGrid.appendChild(createProductCard(p));
+      });
+    }
+
+    if (projectsGrid) {
+      projectsGrid.innerHTML = "";
+      // نمایش ۶ پروژه اول در صفحه اصلی
+      projects.slice(0, 6).forEach(function (p) {
+        projectsGrid.appendChild(createProjectCard(p));
+      });
+    }
   }
 
   renderProductsPage();
   renderProjectsPage();
   renderProductDetailPage();
+  renderHomePage();
+
+  function setupBackToTop() {
+    var btn = document.createElement("button");
+    btn.id = "backToTop";
+    btn.className = "back-to-top";
+    btn.innerHTML = "↑";
+    btn.setAttribute("aria-label", "برو به بالا");
+    document.body.appendChild(btn);
+
+    window.addEventListener("scroll", function () {
+      if (window.scrollY > 300) {
+        btn.classList.add("show");
+      } else {
+        btn.classList.remove("show");
+      }
+    });
+
+    btn.addEventListener("click", function () {
+      window.scrollTo({
+        top: 0,
+        behavior: "smooth"
+      });
+    });
+  }
+
+  setupBackToTop();
 
   function buildRequestText(data) {
     var parts = [];
@@ -646,12 +754,22 @@ document.addEventListener("DOMContentLoaded", function () {
 
     var statusEl = document.getElementById("formStatus");
     var copyBtn = document.getElementById("copyRequest");
+    var whatsappBtn = document.getElementById("whatsappRequest");
     var lastRequestText = "";
 
     function setStatus(text) {
       if (statusEl) {
         statusEl.textContent = text;
       }
+    }
+
+    function updateWhatsappLink(text) {
+      if (!whatsappBtn) return;
+      // شماره واتساپ نمونه (باید با شماره واقعی جایگزین شود)
+      var phoneNumber = "989120000000"; 
+      var encodedText = encodeURIComponent(text);
+      whatsappBtn.href = "https://wa.me/" + phoneNumber + "?text=" + encodedText;
+      whatsappBtn.hidden = false;
     }
 
     function copyText(text) {
@@ -744,6 +862,7 @@ document.addEventListener("DOMContentLoaded", function () {
 
       saveRequest(payload);
       lastRequestText = buildRequestText(data);
+      updateWhatsappLink(lastRequestText);
       setStatus("درخواست شما ثبت شد. برای ارسال در واتساپ یا پیام رسان، از دکمه کپی استفاده کنید.");
       form.reset();
     });
@@ -762,6 +881,7 @@ document.addEventListener("DOMContentLoaded", function () {
             return;
           }
           textToCopy = buildRequestText(data);
+          updateWhatsappLink(textToCopy);
         }
 
         copyText(textToCopy).then(function () {
