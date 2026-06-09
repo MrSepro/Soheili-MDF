@@ -3,12 +3,12 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>جزئیات محصول | Soheili MDF</title>
-  <meta name="description" content="مشخصات فنی، ابعاد، ضخامت و توضیحات تکمیلی محصول در Soheili MDF.">
+  <title>جزئیات پروژه | Soheili MDF</title>
+  <meta name="description" content="جزئیات پروژه، توضیحات، متریال‌های استفاده شده و پیش‌نمایش قبل/بعد در Soheili MDF.">
   <meta name="robots" content="index,follow">
   <meta name="theme-color" content="#1A1A1A">
-  <meta property="og:title" content="جزئیات محصول | Soheili MDF">
-  <meta property="og:description" content="مشخصات فنی، ابعاد، ضخامت و توضیحات تکمیلی محصول در Soheili MDF.">
+  <meta property="og:title" content="جزئیات پروژه | Soheili MDF">
+  <meta property="og:description" content="جزئیات پروژه، توضیحات، متریال‌های استفاده شده و پیش‌نمایش قبل/بعد در Soheili MDF.">
   <meta property="og:image" content="assets/images/خام.jpg">
   <meta property="og:type" content="website">
   <meta property="og:locale" content="fa_IR">
@@ -49,49 +49,62 @@
   <main>
     <section class="page-hero">
       <div class="container">
-        <p class="breadcrumb" id="productBreadcrumb">خانه / محصولات / جزئیات محصول</p>
-        <h1 id="productHeroTitle">جزئیات محصول</h1>
-        <p id="productHeroText">
-          اطلاعات این محصول از صفحه محصولات نمایش داده می شود.
-        </p>
+        <p class="breadcrumb" id="projectBreadcrumb">خانه / پروژه ها / جزئیات پروژه</p>
+        <h1 id="projectHeroTitle">جزئیات پروژه</h1>
+        <p id="projectHeroText">اطلاعات پروژه از صفحه پروژه‌ها نمایش داده می‌شود.</p>
       </div>
     </section>
 
     <section class="page-content">
       <div class="container">
         <div class="detail-layout">
-          <div class="product-gallery" aria-label="گالری محصول">
-            <div class="detail-media" id="productMedia"></div>
-            <div class="gallery-thumbs" id="productThumbs" hidden></div>
-          </div>
+          <div class="detail-media" id="projectMedia"></div>
 
           <div class="detail-box">
-            <p class="product-brand" id="productBrand"></p>
-            <h2 id="productTitle">اطلاعات محصول</h2>
-            <p class="product-spec" id="productSpec"></p>
-            <ul class="info-list" id="productSpecs"></ul>
-            <p class="detail-description" id="productDescription"></p>
+            <p class="project-meta" id="projectMeta"></p>
+            <h2 id="projectTitle">عنوان پروژه</h2>
+            <p class="detail-description" id="projectDescription"></p>
+
+            <h3 class="detail-subtitle">متریال‌های استفاده شده</h3>
+            <ul class="info-list" id="projectMaterials"></ul>
 
             <div class="page-actions">
-              <a class="btn btn-primary" href="contact.html">درخواست مشاوره</a>
-              <a class="btn btn-secondary" href="products.html">بازگشت به محصولات</a>
+              <a class="btn btn-primary" href="contact.html">درخواست مشاوره برای پروژه مشابه</a>
+              <a class="btn btn-secondary" href="projects.html">بازگشت به پروژه ها</a>
             </div>
           </div>
         </div>
 
-        <div class="related-section" id="relatedSection" hidden>
-          <div class="section-heading">
-            <p class="section-eyebrow">محصولات مشابه</p>
-            <h2>شاید این موارد هم برای شما کاربردی باشد</h2>
+        <div class="page-split">
+          <div class="detail-box">
+            <h2>قبل / بعد</h2>
+            <div class="before-after" aria-label="قبل و بعد پروژه">
+              <div class="before-after-card" id="beforeCard">
+                <p class="before-after-label">قبل</p>
+              </div>
+              <div class="before-after-card" id="afterCard">
+                <p class="before-after-label">بعد</p>
+              </div>
+            </div>
           </div>
-          <div class="products-grid" id="relatedProductsGrid"></div>
+
+          <div class="detail-box">
+            <h2>جمع‌بندی</h2>
+            <p class="section-text" id="projectSummary">
+              این بخش برای توضیح کوتاه‌تر پروژه و نتیجه نهایی استفاده می‌شود.
+            </p>
+            <div class="page-actions">
+              <a class="btn btn-primary" href="contact.html">ثبت درخواست مشاوره</a>
+              <a class="btn btn-outline btn-sm" href="products.html">دیدن محصولات</a>
+            </div>
+          </div>
         </div>
 
-        <div class="empty-state" id="productNotFound" hidden>
-          <h3>محصول پیدا نشد</h3>
-          <p>از صفحه محصولات یک محصول را انتخاب کنید.</p>
+        <div class="empty-state" id="projectNotFound" hidden>
+          <h3>پروژه پیدا نشد</h3>
+          <p>از صفحه پروژه‌ها یک پروژه را انتخاب کنید.</p>
           <div class="page-actions">
-            <a class="btn btn-primary" href="products.html">رفتن به محصولات</a>
+            <a class="btn btn-primary" href="projects.html">رفتن به پروژه ها</a>
           </div>
         </div>
       </div>

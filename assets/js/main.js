@@ -74,6 +74,7 @@ document.addEventListener("DOMContentLoaded", function () {
       finish: "خام",
       shortSpec: "مناسب کابینت و دکور",
       image: "assets/images/خام.jpg",
+      images: ["assets/images/خام.jpg"],
       description: "این محصول نمونه است تا ساختار صفحه آماده باشد. بعدا مشخصات دقیق، قیمت و تصاویر واقعی جایگزین می شود."
     },
     {
@@ -86,6 +87,7 @@ document.addEventListener("DOMContentLoaded", function () {
       finish: "روکش طرح چوب",
       shortSpec: "ظاهر گرم برای فضاهای داخلی",
       image: "assets/images/طرح چوب.jpg",
+      images: ["assets/images/طرح چوب.jpg"],
       description: "برای پروژه هایی که ظاهر چوبی می خواهند و در عین حال اجرای ساده تر لازم است."
     },
     {
@@ -97,7 +99,7 @@ document.addEventListener("DOMContentLoaded", function () {
       size: "122×280",
       finish: "براق",
       shortSpec: "سبک مدرن و روشن",
-      image: "assets/images/products/highgloss-white.jpg",
+      image: null,
       description: "یک گزینه محبوب برای کابینت های مدرن با سطح براق و تمیز."
     },
     {
@@ -110,6 +112,7 @@ document.addEventListener("DOMContentLoaded", function () {
       finish: "مقاوم",
       shortSpec: "مناسب محیط های مرطوب",
       image: "assets/images/ضد_رطوبت.jpg",
+      images: ["assets/images/ضد_رطوبت.jpg"],
       description: "برای فضاهایی که مقاومت در برابر رطوبت اهمیت دارد."
     },
     {
@@ -121,7 +124,7 @@ document.addEventListener("DOMContentLoaded", function () {
       size: "-",
       finish: "آرام بند",
       shortSpec: "حرکت نرم برای کشو",
-      image: "assets/images/products/hardware-drawer.jpg",
+      image: null,
       description: "ریل نمونه برای نمایش ساختار یراق آلات در سایت. بعدا مدل ها و برندهای واقعی اضافه می شود."
     },
     {
@@ -133,7 +136,7 @@ document.addEventListener("DOMContentLoaded", function () {
       size: "-",
       finish: "آرام بند",
       shortSpec: "دوام بالا برای درب کابینت",
-      image: "assets/images/products/hardware-hinge.jpg",
+      image: null,
       description: "لولا نمونه برای نمایش ساختار اطلاعات محصول و مسیر تماس برای مشاوره."
     },
     {
@@ -145,7 +148,7 @@ document.addEventListener("DOMContentLoaded", function () {
       size: "قطر 30 سانت",
       finish: "کاربردی",
       shortSpec: "مناسب برش تمیز",
-      image: "assets/images/products/tools-saw.jpg",
+      image: null,
       description: "محصول نمونه از دسته ابزار و تجهیزات برای کامل شدن مسیرهای سایت."
     },
     {
@@ -157,7 +160,7 @@ document.addEventListener("DOMContentLoaded", function () {
       size: "183×366",
       finish: "خام",
       shortSpec: "برای پروژه های سنگین تر",
-      image: "assets/images/products/mdf-raw-18.jpg",
+      image: null,
       description: "برای برخی بخش ها که استحکام بیشتری نیاز است، ضخامت بالاتر انتخاب می شود."
     }
   ];
@@ -168,48 +171,66 @@ document.addEventListener("DOMContentLoaded", function () {
       title: "پروژه آشپزخانه سبک مدرن",
       type: "کابینت آشپزخانه",
       area: 18,
-      image: "assets/images/projects/kitchen-modern.jpg",
-      shortText: "ترکیب متریال روشن با یراق آلات آرام بند برای استفاده روزمره."
+      image: null,
+      shortText: "ترکیب متریال روشن با یراق آلات آرام بند برای استفاده روزمره.",
+      description: "یک پروژه نمونه برای نمایش ساختار صفحه. در نسخه نهایی، تصاویر واقعی و جزئیات اجرایی جایگزین می‌شود.",
+      materials: ["ورق MDF", "هایگلاس", "یراق آلات آرام بند"],
+      summary: "تمرکز این پروژه روی نظم، نور و انتخاب متریال مناسب برای استفاده روزمره بوده است."
     },
     {
       id: "proj-closet-wood-12",
       title: "کمد با روکش طرح چوب",
       type: "کمد دیواری",
       area: 12,
-      image: "assets/images/projects/closet-wood.jpg",
-      shortText: "طراحی کاربردی با فضای تقسیم بندی و رنگ گرم برای اتاق خواب."
+      image: null,
+      shortText: "طراحی کاربردی با فضای تقسیم بندی و رنگ گرم برای اتاق خواب.",
+      description: "این پروژه نمونه برای تکمیل ساختار صفحه پروژه‌ها است و بعداً با توضیحات واقعی تکمیل می‌شود.",
+      materials: ["MDF روکش دار", "یراق آلات کمد", "دستگیره"],
+      summary: "طراحی با هدف افزایش فضای ذخیره‌سازی و هماهنگی رنگی انجام شده است."
     },
     {
       id: "proj-office-minimal-24",
       title: "دکور اداری مینیمال",
       type: "فضای اداری",
       area: 24,
-      image: "assets/images/projects/office-minimal.jpg",
-      shortText: "ترکیب رنگ خنثی با جزئیات فلزی برای ظاهر حرفه ای و مدرن."
+      image: null,
+      shortText: "ترکیب رنگ خنثی با جزئیات فلزی برای ظاهر حرفه ای و مدرن.",
+      description: "پروژه نمونه برای نمایش دسته‌بندی‌های پروژه. تصاویر و جزئیات واقعی در آینده اضافه می‌شود.",
+      materials: ["MDF", "روکش طرح چوب", "متریال مکمل"],
+      summary: "نتیجه نهایی یک فضای مینیمال و کاربردی برای محیط اداری است."
     },
     {
       id: "proj-kitchen-classic-20",
       title: "کابینت با جزئیات قاب دار",
       type: "کابینت آشپزخانه",
       area: 20,
-      image: "assets/images/projects/kitchen-classic.jpg",
-      shortText: "انتخاب متریال و یراق مناسب برای دوام بالا و ظاهر کلاسیک."
+      image: null,
+      shortText: "انتخاب متریال و یراق مناسب برای دوام بالا و ظاهر کلاسیک.",
+      description: "پروژه نمونه برای کابینت کلاسیک. در نسخه نهایی، نمونه‌کار واقعی و مشخصات دقیق نمایش داده می‌شود.",
+      materials: ["MDF", "روکش", "یراق آلات"],
+      summary: "این پروژه بر پایه طراحی قاب‌دار و جزئیات کلاسیک تعریف شده است."
     },
     {
       id: "proj-decor-tvwall-6",
       title: "تی وی وال با ترکیب متریال",
       type: "دکور",
       area: 6,
-      image: "assets/images/projects/tv-wall.jpg",
-      shortText: "چیدمان ساده با نورپردازی ملایم و جزئیات چوبی."
+      image: null,
+      shortText: "چیدمان ساده با نورپردازی ملایم و جزئیات چوبی.",
+      description: "نمونه برای نمایش دکور. بعداً تصویر واقعی و توضیحات دقیق جایگزین می‌شود.",
+      materials: ["MDF روکش دار", "متریال دکور", "نورپردازی"],
+      summary: "ترکیب متریال با نورپردازی ملایم برای ایجاد یک نقطه کانونی در فضا."
     },
     {
       id: "proj-decor-entry-8",
       title: "کمد و جاکفشی ورودی",
       type: "دکور",
       area: 8,
-      image: "assets/images/projects/entry-decor.jpg",
-      shortText: "طراحی کاربردی برای نظم دهی، با متریال مقاوم و ساده."
+      image: null,
+      shortText: "طراحی کاربردی برای نظم دهی، با متریال مقاوم و ساده.",
+      description: "پروژه نمونه ورودی. اطلاعات و تصاویر واقعی بعداً تکمیل می‌شود.",
+      materials: ["MDF", "یراق آلات", "روکش مقاوم"],
+      summary: "تمرکز روی نظم‌دهی ورودی و استفاده از متریال مقاوم برای استفاده روزانه."
     }
   ];
 
@@ -310,11 +331,17 @@ document.addEventListener("DOMContentLoaded", function () {
     var actions = document.createElement("div");
     actions.className = "card-actions";
 
+    var detailLink = document.createElement("a");
+    detailLink.className = "btn btn-primary btn-sm";
+    detailLink.href = "project-detail.html?id=" + encodeURIComponent(project.id);
+    detailLink.textContent = "جزئیات";
+
     var contactLink = document.createElement("a");
     contactLink.className = "btn btn-outline btn-sm";
     contactLink.href = "contact.html";
     contactLink.textContent = "درخواست مشاوره";
 
+    actions.appendChild(detailLink);
     actions.appendChild(contactLink);
 
     body.appendChild(meta);
@@ -339,8 +366,11 @@ document.addEventListener("DOMContentLoaded", function () {
     var chipsWrap = document.getElementById("categoryChips");
     var resultsMeta = document.getElementById("resultsMeta");
     var emptyState = document.getElementById("emptyState");
+    var paginationEl = document.getElementById("productsPagination");
 
     var activeCategory = "all";
+    var pageSize = 9;
+    var currentPage = 1;
 
     function activateCategory(categoryValue) {
       if (!categoryValue) {
@@ -407,18 +437,66 @@ document.addEventListener("DOMContentLoaded", function () {
 
     function render() {
       var list = getFilteredProducts();
+      var totalItems = list.length;
+      var totalPages = Math.max(1, Math.ceil(totalItems / pageSize));
+      if (currentPage > totalPages) {
+        currentPage = totalPages;
+      }
+      var startIndex = (currentPage - 1) * pageSize;
+      var endIndex = startIndex + pageSize;
+      var paged = list.slice(startIndex, endIndex);
+
       grid.innerHTML = "";
 
-      list.forEach(function (product) {
+      paged.forEach(function (product) {
         grid.appendChild(createProductCard(product));
       });
 
       if (resultsMeta) {
-        resultsMeta.textContent = list.length + " محصول نمایش داده شد.";
+        if (totalItems === 0) {
+          resultsMeta.textContent = "";
+        } else {
+          resultsMeta.textContent = totalItems + " محصول • صفحه " + currentPage + " از " + totalPages;
+        }
       }
 
       if (emptyState) {
-        emptyState.hidden = list.length !== 0;
+        emptyState.hidden = totalItems !== 0;
+      }
+
+      if (paginationEl) {
+        paginationEl.innerHTML = "";
+        if (totalItems === 0 || totalPages === 1) {
+          paginationEl.hidden = true;
+          return;
+        }
+
+        paginationEl.hidden = false;
+
+        function createPageButton(label, page, disabled, isCurrent) {
+          var btn = document.createElement("button");
+          btn.type = "button";
+          btn.className = "btn btn-outline btn-sm";
+          btn.textContent = label;
+          btn.disabled = Boolean(disabled);
+          if (isCurrent) {
+            btn.setAttribute("aria-current", "page");
+          }
+          btn.addEventListener("click", function () {
+            currentPage = page;
+            render();
+            window.scrollTo({ top: 0, behavior: "smooth" });
+          });
+          return btn;
+        }
+
+        paginationEl.appendChild(createPageButton("قبلی", Math.max(1, currentPage - 1), currentPage === 1, false));
+
+        for (var p = 1; p <= totalPages; p += 1) {
+          paginationEl.appendChild(createPageButton(String(p), p, false, p === currentPage));
+        }
+
+        paginationEl.appendChild(createPageButton("بعدی", Math.min(totalPages, currentPage + 1), currentPage === totalPages, false));
       }
     }
 
@@ -430,6 +508,7 @@ document.addEventListener("DOMContentLoaded", function () {
         }
         activeCategory = btn.getAttribute("data-category") || "all";
         updateActiveChip(btn);
+        currentPage = 1;
         render();
       });
     }
@@ -445,11 +524,17 @@ document.addEventListener("DOMContentLoaded", function () {
     }
 
     if (searchInput) {
-      searchInput.addEventListener("input", render);
+      searchInput.addEventListener("input", function () {
+        currentPage = 1;
+        render();
+      });
     }
 
     if (sortSelect) {
-      sortSelect.addEventListener("change", render);
+      sortSelect.addEventListener("change", function () {
+        currentPage = 1;
+        render();
+      });
     }
 
     render();
@@ -635,13 +720,60 @@ document.addEventListener("DOMContentLoaded", function () {
     }
 
     var mediaEl = document.getElementById("productMedia");
+    var thumbsEl = document.getElementById("productThumbs");
+    var images = [];
+    if (Array.isArray(product.images) && product.images.length) {
+      images = product.images.slice();
+    } else if (product.image) {
+      images = [product.image];
+    }
+
     if (mediaEl) {
       mediaEl.innerHTML = "";
-      if (product.image) {
-        var img = document.createElement("img");
-        img.src = product.image;
-        img.alt = product.title;
-        mediaEl.appendChild(img);
+      if (images[0]) {
+        var mainImg = document.createElement("img");
+        mainImg.src = images[0];
+        mainImg.alt = product.title;
+        mainImg.loading = "lazy";
+        mediaEl.appendChild(mainImg);
+
+        if (thumbsEl) {
+          thumbsEl.innerHTML = "";
+          if (images.length > 1) {
+            thumbsEl.hidden = false;
+            images.forEach(function (src, index) {
+              var btn = document.createElement("button");
+              btn.type = "button";
+              btn.className = "gallery-thumb";
+              btn.setAttribute("aria-label", "تصویر " + (index + 1));
+
+              var tImg = document.createElement("img");
+              tImg.src = src;
+              tImg.alt = product.title;
+              tImg.loading = "lazy";
+              btn.appendChild(tImg);
+
+              if (index === 0) {
+                btn.classList.add("is-active");
+              }
+
+              btn.addEventListener("click", function () {
+                mainImg.src = src;
+                var all = thumbsEl.querySelectorAll(".gallery-thumb");
+                all.forEach(function (b) {
+                  b.classList.remove("is-active");
+                });
+                btn.classList.add("is-active");
+              });
+
+              thumbsEl.appendChild(btn);
+            });
+          } else {
+            thumbsEl.hidden = true;
+          }
+        }
+      } else if (thumbsEl) {
+        thumbsEl.hidden = true;
       }
     }
 
@@ -665,6 +797,102 @@ document.addEventListener("DOMContentLoaded", function () {
     }
 
     document.title = product.title + " | Soheili MDF";
+  }
+
+  function renderProjectDetailPage() {
+    var titleEl = document.getElementById("projectTitle");
+    if (!titleEl) {
+      return;
+    }
+
+    var id = getQueryParam("id");
+    var project = projects.find(function (p) {
+      return p.id === id;
+    });
+
+    var layout = document.querySelector(".detail-layout");
+    var notFound = document.getElementById("projectNotFound");
+
+    if (!project) {
+      if (layout) {
+        layout.style.display = "none";
+      }
+      if (notFound) {
+        notFound.hidden = false;
+      }
+      return;
+    }
+
+    if (layout) {
+      layout.style.display = "";
+    }
+    if (notFound) {
+      notFound.hidden = true;
+    }
+
+    var breadcrumb = document.getElementById("projectBreadcrumb");
+    var heroTitle = document.getElementById("projectHeroTitle");
+    var heroText = document.getElementById("projectHeroText");
+    var metaEl = document.getElementById("projectMeta");
+    var descEl = document.getElementById("projectDescription");
+    var materialsEl = document.getElementById("projectMaterials");
+    var summaryEl = document.getElementById("projectSummary");
+    var mediaEl = document.getElementById("projectMedia");
+
+    if (breadcrumb) {
+      breadcrumb.textContent = "خانه / پروژه ها / " + project.title;
+    }
+
+    if (heroTitle) {
+      heroTitle.textContent = project.title;
+    }
+
+    if (heroText) {
+      heroText.textContent = project.type + " • " + project.area + " متر";
+    }
+
+    if (metaEl) {
+      metaEl.textContent = project.type + " • " + project.area + " متر";
+    }
+
+    titleEl.textContent = project.title;
+
+    if (descEl) {
+      descEl.textContent = project.description || project.shortText || "";
+    }
+
+    if (materialsEl) {
+      materialsEl.innerHTML = "";
+      var materials = Array.isArray(project.materials) ? project.materials : [];
+      if (materials.length === 0) {
+        var liEmpty = document.createElement("li");
+        liEmpty.textContent = "در نسخه نهایی، لیست متریال تکمیل می‌شود.";
+        materialsEl.appendChild(liEmpty);
+      } else {
+        materials.forEach(function (m) {
+          var li = document.createElement("li");
+          li.textContent = m;
+          materialsEl.appendChild(li);
+        });
+      }
+    }
+
+    if (summaryEl) {
+      summaryEl.textContent = project.summary || "";
+    }
+
+    if (mediaEl) {
+      mediaEl.innerHTML = "";
+      if (project.image) {
+        var img = document.createElement("img");
+        img.src = project.image;
+        img.alt = project.title;
+        img.loading = "lazy";
+        mediaEl.appendChild(img);
+      }
+    }
+
+    document.title = project.title + " | پروژه ها | Soheili MDF";
   }
 
   function renderHomePage() {
@@ -691,6 +919,7 @@ document.addEventListener("DOMContentLoaded", function () {
   renderProductsPage();
   renderProjectsPage();
   renderProductDetailPage();
+  renderProjectDetailPage();
   renderHomePage();
 
   function setupBackToTop() {
