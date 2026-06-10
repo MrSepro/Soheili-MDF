@@ -12,6 +12,9 @@
   <meta property="og:image" content="assets/images/خام.jpg">
   <meta property="og:type" content="website">
   <meta property="og:locale" content="fa_IR">
+  <meta property="og:site_name" content="Soheili MDF">
+  <meta property="og:url" content="https://soheilimdf.ir/products.html">
+  <link rel="canonical" href="https://soheilimdf.ir/products.html">
   <link rel="stylesheet" href="assets/css/style.css">
 </head>
 <body>
@@ -79,8 +82,25 @@
               <option value="default">پیش فرض</option>
               <option value="title-asc">نام: صعودی</option>
               <option value="title-desc">نام: نزولی</option>
+              <option value="thickness-asc">ضخامت: کم به زیاد</option>
+              <option value="thickness-desc">ضخامت: زیاد به کم</option>
             </select>
           </label>
+
+          <label class="field">
+            <span class="field-label">برند</span>
+            <select id="brandFilter" class="field-input">
+              <option value="all">همه</option>
+              <option value="متنوع">متنوع</option>
+              <option value="ایرانی">ایرانی</option>
+              <option value="ترک">ترک</option>
+              <option value="چینی">چینی</option>
+            </select>
+          </label>
+        </div>
+
+        <div class="filters-actions">
+          <button class="btn btn-outline btn-sm" type="button" id="resetProductFilters">پاک کردن فیلترها</button>
         </div>
 
         <div class="filter-chips" id="categoryChips" aria-label="دسته بندی ها">

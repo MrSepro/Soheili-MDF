@@ -12,6 +12,9 @@
   <meta property="og:image" content="assets/images/خام.jpg">
   <meta property="og:type" content="website">
   <meta property="og:locale" content="fa_IR">
+  <meta property="og:site_name" content="Soheili MDF">
+  <meta property="og:url" content="https://soheilimdf.ir/product-detail.html">
+  <link rel="canonical" href="https://soheilimdf.ir/product-detail.html">
   <link rel="stylesheet" href="assets/css/style.css">
 </head>
 <body>
@@ -69,12 +72,20 @@
             <p class="product-brand" id="productBrand"></p>
             <h2 id="productTitle">اطلاعات محصول</h2>
             <p class="product-spec" id="productSpec"></p>
-            <ul class="info-list" id="productSpecs"></ul>
+            <div class="spec-table-wrap" aria-label="مشخصات فنی">
+              <table class="spec-table" id="productSpecsTable">
+                <tbody></tbody>
+              </table>
+            </div>
+
+            <h3 class="detail-subtitle">ویژگی‌ها</h3>
+            <ul class="feature-list" id="productFeatures"></ul>
             <p class="detail-description" id="productDescription"></p>
 
             <div class="page-actions">
-              <a class="btn btn-primary" href="contact.html">درخواست مشاوره</a>
-              <a class="btn btn-secondary" href="products.html">بازگشت به محصولات</a>
+              <a class="btn btn-primary" id="productPriceInquiry" href="contact.html">استعلام قیمت</a>
+              <a class="btn btn-secondary" id="productBuyConsult" href="contact.html">مشاوره خرید</a>
+              <a class="btn btn-outline btn-sm" href="products.html">بازگشت به محصولات</a>
             </div>
           </div>
         </div>

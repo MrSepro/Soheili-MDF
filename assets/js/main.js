@@ -67,52 +67,56 @@ document.addEventListener("DOMContentLoaded", function () {
     {
       id: "mdf-raw-16",
       title: "ورق MDF خام 16 میل",
-      brand: "متنوع",
+      brand: "ایرانی",
       category: "MDF خام",
       thickness: "16 میلی متر",
       size: "183×366",
       finish: "خام",
       shortSpec: "مناسب کابینت و دکور",
       image: "assets/images/خام.jpg",
-      images: ["assets/images/خام.jpg"],
+      images: ["assets/images/خام.jpg", "assets/images/خام.jpg"],
+      features: ["کیفیت یکنواخت برای برش", "مناسب روکش و رنگ", "کاربردی برای کابینت و دکور"],
       description: "این محصول نمونه است تا ساختار صفحه آماده باشد. بعدا مشخصات دقیق، قیمت و تصاویر واقعی جایگزین می شود."
     },
     {
       id: "mdf-veneer-wood",
       title: "MDF روکش دار طرح چوب",
-      brand: "متنوع",
+      brand: "ترک",
       category: "MDF روکش دار",
       thickness: "16 میلی متر",
       size: "183×366",
       finish: "روکش طرح چوب",
       shortSpec: "ظاهر گرم برای فضاهای داخلی",
       image: "assets/images/طرح چوب.jpg",
-      images: ["assets/images/طرح چوب.jpg"],
+      images: ["assets/images/طرح چوب.jpg", "assets/images/طرح چوب.jpg"],
+      features: ["ظاهر مشابه چوب طبیعی", "تمیزکاری ساده", "مناسب کمد و دکور"],
       description: "برای پروژه هایی که ظاهر چوبی می خواهند و در عین حال اجرای ساده تر لازم است."
     },
     {
       id: "highgloss-white",
       title: "هایگلاس سفید براق",
-      brand: "متنوع",
+      brand: "چینی",
       category: "هایگلاس",
       thickness: "16 میلی متر",
       size: "122×280",
       finish: "براق",
       shortSpec: "سبک مدرن و روشن",
       image: null,
+      features: ["سطح براق و مدرن", "مناسب سبک مینیمال", "ترکیب خوب با یراق آرام‌بند"],
       description: "یک گزینه محبوب برای کابینت های مدرن با سطح براق و تمیز."
     },
     {
       id: "pvc-moisture",
       title: "PVC ضد رطوبت",
-      brand: "متنوع",
+      brand: "ایرانی",
       category: "PVC",
       thickness: "16 میلی متر",
       size: "122×280",
       finish: "مقاوم",
       shortSpec: "مناسب محیط های مرطوب",
       image: "assets/images/ضد_رطوبت.jpg",
-      images: ["assets/images/ضد_رطوبت.jpg"],
+      images: ["assets/images/ضد_رطوبت.jpg", "assets/images/ضد_رطوبت.jpg"],
+      features: ["مقاوم در برابر رطوبت", "مناسب سرویس و آشپزخانه", "نگهداری ساده"],
       description: "برای فضاهایی که مقاومت در برابر رطوبت اهمیت دارد."
     },
     {
@@ -125,43 +129,190 @@ document.addEventListener("DOMContentLoaded", function () {
       finish: "آرام بند",
       shortSpec: "حرکت نرم برای کشو",
       image: null,
+      features: ["حرکت نرم و بی‌صدا", "دوام مناسب مصرف روزانه", "نصب استاندارد"],
       description: "ریل نمونه برای نمایش ساختار یراق آلات در سایت. بعدا مدل ها و برندهای واقعی اضافه می شود."
     },
     {
       id: "hardware-hinge-softclose",
       title: "لولا آرام بند کابینت",
-      brand: "متنوع",
+      brand: "ترک",
       category: "یراق آلات",
       thickness: "-",
       size: "-",
       finish: "آرام بند",
       shortSpec: "دوام بالا برای درب کابینت",
       image: null,
+      features: ["آرام‌بند", "تنظیم‌پذیر", "مناسب درب‌های کابینت"],
       description: "لولا نمونه برای نمایش ساختار اطلاعات محصول و مسیر تماس برای مشاوره."
     },
     {
       id: "tools-saw-blade",
       title: "تیغ اره MDF",
-      brand: "متنوع",
+      brand: "چینی",
       category: "ابزار و تجهیزات",
       thickness: "-",
       size: "قطر 30 سانت",
       finish: "کاربردی",
       shortSpec: "مناسب برش تمیز",
       image: null,
+      features: ["برش تمیز", "مناسب MDF", "کاربردی برای کارگاه"],
       description: "محصول نمونه از دسته ابزار و تجهیزات برای کامل شدن مسیرهای سایت."
     },
     {
       id: "mdf-raw-18",
       title: "ورق MDF خام 18 میل",
-      brand: "متنوع",
+      brand: "ایرانی",
       category: "MDF خام",
       thickness: "18 میلی متر",
       size: "183×366",
       finish: "خام",
       shortSpec: "برای پروژه های سنگین تر",
       image: null,
+      features: ["استحکام بالاتر", "مناسب صفحات بزرگ", "قابل روکش"],
       description: "برای برخی بخش ها که استحکام بیشتری نیاز است، ضخامت بالاتر انتخاب می شود."
+    },
+    {
+      id: "mdf-raw-8",
+      title: "ورق MDF خام 8 میل",
+      brand: "ایرانی",
+      category: "MDF خام",
+      thickness: "8 میلی متر",
+      size: "183×366",
+      finish: "خام",
+      shortSpec: "سبک تر برای پشت کار و دیواره",
+      image: null,
+      features: ["سبک و کاربردی", "مناسب پشت کار", "برش آسان"],
+      description: "مدل نمونه برای تکمیل لیست محصولات و تست صفحه بندی."
+    },
+    {
+      id: "mdf-raw-25",
+      title: "ورق MDF خام 25 میل",
+      brand: "ترک",
+      category: "MDF خام",
+      thickness: "25 میلی متر",
+      size: "183×366",
+      finish: "خام",
+      shortSpec: "برای صفحات مقاوم و سنگین",
+      image: null,
+      features: ["ضخامت بالا", "مناسب کانتر و صفحات", "دوام مناسب"],
+      description: "مدل نمونه برای تکمیل ساختار صفحه."
+    },
+    {
+      id: "mdf-veneer-walnut",
+      title: "MDF روکش دار گردویی",
+      brand: "ترک",
+      category: "MDF روکش دار",
+      thickness: "16 میلی متر",
+      size: "183×366",
+      finish: "روکش گردویی",
+      shortSpec: "رنگ گرم برای دکور",
+      image: null,
+      features: ["طرح گرم و کلاسیک", "مناسب دکور", "قابل ترکیب با رنگ روشن"],
+      description: "مدل نمونه برای نمایش دسته روکش دار."
+    },
+    {
+      id: "mdf-veneer-oak",
+      title: "MDF روکش دار بلوطی",
+      brand: "ایرانی",
+      category: "MDF روکش دار",
+      thickness: "16 میلی متر",
+      size: "183×366",
+      finish: "روکش بلوط",
+      shortSpec: "ظاهر طبیعی و کاربردی",
+      image: null,
+      features: ["مناسب کمد و دیوارکوب", "نگهداری آسان", "هماهنگ با سبک مدرن"],
+      description: "مدل نمونه برای تکمیل لیست."
+    },
+    {
+      id: "highgloss-gray",
+      title: "هایگلاس طوسی براق",
+      brand: "چینی",
+      category: "هایگلاس",
+      thickness: "16 میلی متر",
+      size: "122×280",
+      finish: "براق",
+      shortSpec: "انتخاب محبوب برای کابینت",
+      image: null,
+      features: ["ظاهر مدرن", "مناسب سبک مینیمال", "ترکیب با صفحه روشن"],
+      description: "مدل نمونه برای کامل شدن دسته هایگلاس."
+    },
+    {
+      id: "highgloss-black",
+      title: "هایگلاس مشکی براق",
+      brand: "ترک",
+      category: "هایگلاس",
+      thickness: "16 میلی متر",
+      size: "122×280",
+      finish: "براق",
+      shortSpec: "لوکس و خاص برای جزئیات",
+      image: null,
+      features: ["مناسب جزئیات لوکس", "ترکیب با نورپردازی", "نیازمند نگهداری دقیق‌تر"],
+      description: "مدل نمونه برای نمایش تنوع رنگ."
+    },
+    {
+      id: "pvc-white-matte",
+      title: "PVC سفید مات",
+      brand: "ایرانی",
+      category: "PVC",
+      thickness: "16 میلی متر",
+      size: "122×280",
+      finish: "مات",
+      shortSpec: "ظاهر ساده و مقاوم",
+      image: null,
+      features: ["مقاوم در برابر رطوبت", "ظاهر ساده", "مناسب فضاهای پرتردد"],
+      description: "مدل نمونه برای نمایش تنوع PVC."
+    },
+    {
+      id: "hardware-handle-modern",
+      title: "دستگیره کابینت مدرن",
+      brand: "چینی",
+      category: "یراق آلات",
+      thickness: "-",
+      size: "192 میلی متر",
+      finish: "مات",
+      shortSpec: "ظاهر مینیمال و کاربردی",
+      image: null,
+      features: ["نصب آسان", "ظاهر مدرن", "مناسب کابینت و کمد"],
+      description: "محصول نمونه برای تکمیل صفحه بندی."
+    },
+    {
+      id: "hardware-screw-set",
+      title: "ست پیچ و اتصالات MDF",
+      brand: "متنوع",
+      category: "یراق آلات",
+      thickness: "-",
+      size: "متنوع",
+      finish: "کاربردی",
+      shortSpec: "برای مونتاژ سریع و مطمئن",
+      image: null,
+      features: ["مناسب مونتاژ", "کاربردی", "تنوع سایز"],
+      description: "محصول نمونه برای نمایش ساختار."
+    },
+    {
+      id: "tools-edge-banding",
+      title: "نوار PVC لبه (رول)",
+      brand: "ایرانی",
+      category: "ابزار و تجهیزات",
+      thickness: "-",
+      size: "رول 50 متری",
+      finish: "مات",
+      shortSpec: "لبه‌کاری تمیز و یکدست",
+      image: null,
+      features: ["لبه‌کاری تمیز", "تنوع رنگ", "دوام مناسب"],
+      description: "مدل نمونه برای کامل شدن لیست."
+    },
+    {
+      id: "tools-glue",
+      title: "چسب لبه‌چسبان MDF",
+      brand: "ترک",
+      category: "ابزار و تجهیزات",
+      thickness: "-",
+      size: "1 کیلو",
+      finish: "کاربردی",
+      shortSpec: "برای اتصال مطمئن نوار",
+      image: null,
+      features: ["اتصال مناسب", "کارگاه‌پسند", "کاربردی"],
+      description: "مدل نمونه برای تکمیل ساختار."
     }
   ];
 
@@ -171,7 +322,11 @@ document.addEventListener("DOMContentLoaded", function () {
       title: "پروژه آشپزخانه سبک مدرن",
       type: "کابینت آشپزخانه",
       area: 18,
-      image: null,
+      image: "assets/images/خام.jpg",
+      location: "تهران",
+      durationWeeks: 3,
+      beforeImage: "assets/images/طرح چوب.jpg",
+      afterImage: "assets/images/خام.jpg",
       shortText: "ترکیب متریال روشن با یراق آلات آرام بند برای استفاده روزمره.",
       description: "یک پروژه نمونه برای نمایش ساختار صفحه. در نسخه نهایی، تصاویر واقعی و جزئیات اجرایی جایگزین می‌شود.",
       materials: ["ورق MDF", "هایگلاس", "یراق آلات آرام بند"],
@@ -182,7 +337,11 @@ document.addEventListener("DOMContentLoaded", function () {
       title: "کمد با روکش طرح چوب",
       type: "کمد دیواری",
       area: 12,
-      image: null,
+      image: "assets/images/طرح چوب.jpg",
+      location: "کرج",
+      durationWeeks: 2,
+      beforeImage: "assets/images/خام.jpg",
+      afterImage: "assets/images/طرح چوب.jpg",
       shortText: "طراحی کاربردی با فضای تقسیم بندی و رنگ گرم برای اتاق خواب.",
       description: "این پروژه نمونه برای تکمیل ساختار صفحه پروژه‌ها است و بعداً با توضیحات واقعی تکمیل می‌شود.",
       materials: ["MDF روکش دار", "یراق آلات کمد", "دستگیره"],
@@ -194,6 +353,10 @@ document.addEventListener("DOMContentLoaded", function () {
       type: "فضای اداری",
       area: 24,
       image: null,
+      location: "تهران",
+      durationWeeks: 4,
+      beforeImage: null,
+      afterImage: null,
       shortText: "ترکیب رنگ خنثی با جزئیات فلزی برای ظاهر حرفه ای و مدرن.",
       description: "پروژه نمونه برای نمایش دسته‌بندی‌های پروژه. تصاویر و جزئیات واقعی در آینده اضافه می‌شود.",
       materials: ["MDF", "روکش طرح چوب", "متریال مکمل"],
@@ -205,6 +368,10 @@ document.addEventListener("DOMContentLoaded", function () {
       type: "کابینت آشپزخانه",
       area: 20,
       image: null,
+      location: "شهریار",
+      durationWeeks: 4,
+      beforeImage: null,
+      afterImage: null,
       shortText: "انتخاب متریال و یراق مناسب برای دوام بالا و ظاهر کلاسیک.",
       description: "پروژه نمونه برای کابینت کلاسیک. در نسخه نهایی، نمونه‌کار واقعی و مشخصات دقیق نمایش داده می‌شود.",
       materials: ["MDF", "روکش", "یراق آلات"],
@@ -216,6 +383,10 @@ document.addEventListener("DOMContentLoaded", function () {
       type: "دکور",
       area: 6,
       image: null,
+      location: "تهران",
+      durationWeeks: 1,
+      beforeImage: null,
+      afterImage: null,
       shortText: "چیدمان ساده با نورپردازی ملایم و جزئیات چوبی.",
       description: "نمونه برای نمایش دکور. بعداً تصویر واقعی و توضیحات دقیق جایگزین می‌شود.",
       materials: ["MDF روکش دار", "متریال دکور", "نورپردازی"],
@@ -227,6 +398,10 @@ document.addEventListener("DOMContentLoaded", function () {
       type: "دکور",
       area: 8,
       image: null,
+      location: "پردیس",
+      durationWeeks: 2,
+      beforeImage: null,
+      afterImage: null,
       shortText: "طراحی کاربردی برای نظم دهی، با متریال مقاوم و ساده.",
       description: "پروژه نمونه ورودی. اطلاعات و تصاویر واقعی بعداً تکمیل می‌شود.",
       materials: ["MDF", "یراق آلات", "روکش مقاوم"],
@@ -248,6 +423,15 @@ document.addEventListener("DOMContentLoaded", function () {
     } catch (e) {
       return null;
     }
+  }
+
+  function parseThicknessValue(value) {
+    var raw = String(value || "");
+    var match = raw.match(/(\d+(?:[.,]\d+)?)/);
+    if (!match) {
+      return null;
+    }
+    return Number(String(match[1]).replace(",", "."));
   }
 
   function createProductCard(product) {
@@ -363,10 +547,12 @@ document.addEventListener("DOMContentLoaded", function () {
 
     var searchInput = document.getElementById("productSearch");
     var sortSelect = document.getElementById("productSort");
+    var brandSelect = document.getElementById("brandFilter");
     var chipsWrap = document.getElementById("categoryChips");
     var resultsMeta = document.getElementById("resultsMeta");
     var emptyState = document.getElementById("emptyState");
     var paginationEl = document.getElementById("productsPagination");
+    var resetBtn = document.getElementById("resetProductFilters");
 
     var activeCategory = "all";
     var pageSize = 9;
@@ -400,6 +586,13 @@ document.addEventListener("DOMContentLoaded", function () {
         });
       }
 
+      var activeBrand = brandSelect ? String(brandSelect.value || "all") : "all";
+      if (activeBrand !== "all") {
+        filtered = filtered.filter(function (p) {
+          return p.brand === activeBrand;
+        });
+      }
+
       if (term) {
         filtered = filtered.filter(function (p) {
           var hay = normalizeText(p.title + " " + p.brand);
@@ -415,6 +608,15 @@ document.addEventListener("DOMContentLoaded", function () {
       } else if (sortMode === "title-desc") {
         filtered.sort(function (a, b) {
           return normalizeText(b.title).localeCompare(normalizeText(a.title), "fa");
+        });
+      } else if (sortMode === "thickness-asc" || sortMode === "thickness-desc") {
+        filtered.sort(function (a, b) {
+          var av = parseThicknessValue(a.thickness);
+          var bv = parseThicknessValue(b.thickness);
+          if (av == null && bv == null) return 0;
+          if (av == null) return 1;
+          if (bv == null) return -1;
+          return sortMode === "thickness-asc" ? av - bv : bv - av;
         });
       }
 
@@ -528,10 +730,37 @@ document.addEventListener("DOMContentLoaded", function () {
         currentPage = 1;
         render();
       });
+
+      searchInput.addEventListener("keydown", function (event) {
+        if (event.key === "Escape") {
+          searchInput.value = "";
+          currentPage = 1;
+          render();
+        }
+      });
     }
 
     if (sortSelect) {
       sortSelect.addEventListener("change", function () {
+        currentPage = 1;
+        render();
+      });
+    }
+
+    if (brandSelect) {
+      brandSelect.addEventListener("change", function () {
+        currentPage = 1;
+        render();
+      });
+    }
+
+    if (resetBtn) {
+      resetBtn.addEventListener("click", function () {
+        if (searchInput) searchInput.value = "";
+        if (sortSelect) sortSelect.value = "default";
+        if (brandSelect) brandSelect.value = "all";
+        activeCategory = "all";
+        updateActiveChip(chipsWrap ? chipsWrap.querySelector('.chip[data-category="all"]') : null);
         currentPage = 1;
         render();
       });
@@ -551,6 +780,7 @@ document.addEventListener("DOMContentLoaded", function () {
     var chipsWrap = document.getElementById("projectTypeChips");
     var metaEl = document.getElementById("projectsMeta");
     var emptyEl = document.getElementById("projectsEmpty");
+    var resetBtn = document.getElementById("resetProjectFilters");
 
     var activeType = "all";
 
@@ -634,6 +864,16 @@ document.addEventListener("DOMContentLoaded", function () {
       sortSelect.addEventListener("change", render);
     }
 
+    if (resetBtn) {
+      resetBtn.addEventListener("click", function () {
+        activeType = "all";
+        if (searchInput) searchInput.value = "";
+        if (sortSelect) sortSelect.value = "default";
+        updateActiveChip(chipsWrap ? chipsWrap.querySelector('.chip[data-type="all"]') : null);
+        render();
+      });
+    }
+
     render();
   }
 
@@ -673,8 +913,11 @@ document.addEventListener("DOMContentLoaded", function () {
     var breadcrumb = document.getElementById("productBreadcrumb");
     var brandEl = document.getElementById("productBrand");
     var specEl = document.getElementById("productSpec");
-    var specsEl = document.getElementById("productSpecs");
+    var specsTable = document.getElementById("productSpecsTable");
+    var featuresEl = document.getElementById("productFeatures");
     var descEl = document.getElementById("productDescription");
+    var priceInquiryBtn = document.getElementById("productPriceInquiry");
+    var buyConsultBtn = document.getElementById("productBuyConsult");
 
     if (breadcrumb) {
       breadcrumb.textContent = "خانه / محصولات / " + product.title;
@@ -698,21 +941,45 @@ document.addEventListener("DOMContentLoaded", function () {
       specEl.textContent = product.shortSpec;
     }
 
-    if (specsEl) {
-      specsEl.innerHTML = "";
+    var items = [
+      ["دسته‌بندی", product.category],
+      ["برند", product.brand],
+      ["ضخامت", product.thickness],
+      ["ابعاد", product.size],
+      ["روکش / سطح", product.finish]
+    ];
 
-      var items = [
-        ["دسته بندی", product.category],
-        ["ضخامت", product.thickness],
-        ["ابعاد", product.size],
-        ["روکش / سطح", product.finish]
-      ];
+    if (specsTable) {
+      var tbody = specsTable.querySelector("tbody");
+      if (tbody) {
+        tbody.innerHTML = "";
+        items.forEach(function (pair) {
+          var tr = document.createElement("tr");
+          var tdKey = document.createElement("td");
+          var tdVal = document.createElement("td");
+          tdKey.textContent = pair[0];
+          tdVal.textContent = pair[1];
+          tr.appendChild(tdKey);
+          tr.appendChild(tdVal);
+          tbody.appendChild(tr);
+        });
+      }
+    }
 
-      items.forEach(function (pair) {
-        var li = document.createElement("li");
-        li.textContent = pair[0] + ": " + pair[1];
-        specsEl.appendChild(li);
-      });
+    if (featuresEl) {
+      featuresEl.innerHTML = "";
+      var features = Array.isArray(product.features) ? product.features : [];
+      if (features.length === 0) {
+        var liEmpty = document.createElement("li");
+        liEmpty.textContent = "در نسخه نهایی، ویژگی‌های محصول تکمیل می‌شود.";
+        featuresEl.appendChild(liEmpty);
+      } else {
+        features.forEach(function (f) {
+          var li = document.createElement("li");
+          li.textContent = f;
+          featuresEl.appendChild(li);
+        });
+      }
     }
 
     if (descEl) {
@@ -797,6 +1064,14 @@ document.addEventListener("DOMContentLoaded", function () {
     }
 
     document.title = product.title + " | Soheili MDF";
+
+    var baseMessage = "سلام. برای محصول زیر نیاز به راهنمایی دارم:\n" + product.title + "\nکد: " + product.id;
+    if (priceInquiryBtn) {
+      priceInquiryBtn.href = "contact.html?topic=" + encodeURIComponent("استعلام قیمت") + "&message=" + encodeURIComponent(baseMessage);
+    }
+    if (buyConsultBtn) {
+      buyConsultBtn.href = "contact.html?topic=" + encodeURIComponent("مشاوره خرید") + "&message=" + encodeURIComponent(baseMessage);
+    }
   }
 
   function renderProjectDetailPage() {
@@ -838,6 +1113,11 @@ document.addEventListener("DOMContentLoaded", function () {
     var materialsEl = document.getElementById("projectMaterials");
     var summaryEl = document.getElementById("projectSummary");
     var mediaEl = document.getElementById("projectMedia");
+    var infoCardsEl = document.getElementById("projectInfoCards");
+    var beforeCard = document.getElementById("beforeCard");
+    var afterCard = document.getElementById("afterCard");
+    var relatedSection = document.getElementById("relatedProjectsSection");
+    var relatedGrid = document.getElementById("relatedProjectsGrid");
 
     if (breadcrumb) {
       breadcrumb.textContent = "خانه / پروژه ها / " + project.title;
@@ -889,6 +1169,74 @@ document.addEventListener("DOMContentLoaded", function () {
         img.alt = project.title;
         img.loading = "lazy";
         mediaEl.appendChild(img);
+      }
+    }
+
+    if (infoCardsEl) {
+      infoCardsEl.innerHTML = "";
+      var cards = [
+        ["نوع پروژه", project.type],
+        ["متراژ", project.area + " متر"],
+        ["محل اجرا", project.location || "—"],
+        ["زمان اجرا", project.durationWeeks ? project.durationWeeks + " هفته" : "—"]
+      ];
+      cards.forEach(function (pair) {
+        var card = document.createElement("div");
+        card.className = "info-card";
+        var title = document.createElement("p");
+        title.className = "info-card-title";
+        title.textContent = pair[0];
+        var value = document.createElement("p");
+        value.className = "info-card-value";
+        value.textContent = pair[1];
+        card.appendChild(title);
+        card.appendChild(value);
+        infoCardsEl.appendChild(card);
+      });
+    }
+
+    if (beforeCard) {
+      var beforeImgEl = beforeCard.querySelector("img");
+      if (project.beforeImage) {
+        if (!beforeImgEl) {
+          beforeImgEl = document.createElement("img");
+          beforeImgEl.loading = "lazy";
+          beforeImgEl.alt = "قبل از اجرای " + project.title;
+          beforeCard.insertBefore(beforeImgEl, beforeCard.firstChild);
+        }
+        beforeImgEl.src = project.beforeImage;
+      } else if (beforeImgEl) {
+        beforeImgEl.remove();
+      }
+    }
+
+    if (afterCard) {
+      var afterImgEl = afterCard.querySelector("img");
+      if (project.afterImage) {
+        if (!afterImgEl) {
+          afterImgEl = document.createElement("img");
+          afterImgEl.loading = "lazy";
+          afterImgEl.alt = "بعد از اجرای " + project.title;
+          afterCard.insertBefore(afterImgEl, afterCard.firstChild);
+        }
+        afterImgEl.src = project.afterImage;
+      } else if (afterImgEl) {
+        afterImgEl.remove();
+      }
+    }
+
+    if (relatedSection && relatedGrid) {
+      var related = projects.filter(function (p) {
+        return p.type === project.type && p.id !== project.id;
+      }).slice(0, 3);
+      if (related.length) {
+        relatedGrid.innerHTML = "";
+        related.forEach(function (p) {
+          relatedGrid.appendChild(createProjectCard(p));
+        });
+        relatedSection.hidden = false;
+      } else {
+        relatedSection.hidden = true;
       }
     }
 
@@ -986,8 +1334,14 @@ document.addEventListener("DOMContentLoaded", function () {
     var whatsappBtn = document.getElementById("whatsappRequest");
     var lastRequestText = "";
 
-    function setStatus(text) {
+    function setStatus(text, type) {
       if (statusEl) {
+        statusEl.classList.remove("is-success", "is-error");
+        if (type === "success") {
+          statusEl.classList.add("is-success");
+        } else if (type === "error") {
+          statusEl.classList.add("is-error");
+        }
         statusEl.textContent = text;
       }
     }
@@ -1045,6 +1399,23 @@ document.addEventListener("DOMContentLoaded", function () {
       };
     }
 
+    (function prefillFromQuery() {
+      var topic = getQueryParam("topic");
+      var message = getQueryParam("message");
+      if (!topic && !message) {
+        return;
+      }
+      var topicField = form.querySelector('select[name="topic"]');
+      var messageField = form.querySelector('textarea[name="message"]');
+      if (topicField && topic) {
+        topicField.value = topic;
+      }
+      if (messageField && message) {
+        messageField.value = message;
+      }
+      setStatus("فرم با اطلاعات اولیه پر شد. در صورت نیاز ویرایش کنید و سپس ثبت کنید.", "success");
+    })();
+
     function saveRequest(payload) {
       try {
         var raw = localStorage.getItem("soheili_requests");
@@ -1063,19 +1434,19 @@ document.addEventListener("DOMContentLoaded", function () {
 
       var data = getFormData();
       if (!data.fullName) {
-        setStatus("لطفا نام و نام خانوادگی را وارد کنید.");
+        setStatus("لطفا نام و نام خانوادگی را وارد کنید.", "error");
         return;
       }
       if (!isValidPhone(data.phone)) {
-        setStatus("لطفا شماره تماس معتبر وارد کنید.");
+        setStatus("لطفا شماره تماس معتبر وارد کنید.", "error");
         return;
       }
       if (!data.topic) {
-        setStatus("لطفا موضوع را انتخاب کنید.");
+        setStatus("لطفا موضوع را انتخاب کنید.", "error");
         return;
       }
       if (!data.message) {
-        setStatus("لطفا توضیحات را وارد کنید.");
+        setStatus("لطفا توضیحات را وارد کنید.", "error");
         return;
       }
 
@@ -1092,7 +1463,7 @@ document.addEventListener("DOMContentLoaded", function () {
       saveRequest(payload);
       lastRequestText = buildRequestText(data);
       updateWhatsappLink(lastRequestText);
-      setStatus("درخواست شما ثبت شد. برای ارسال در واتساپ یا پیام رسان، از دکمه کپی استفاده کنید.");
+      setStatus("درخواست شما ثبت شد. برای ارسال در واتساپ یا پیام رسان، از دکمه کپی استفاده کنید.", "success");
       form.reset();
     });
 
@@ -1102,11 +1473,11 @@ document.addEventListener("DOMContentLoaded", function () {
         if (!textToCopy) {
           var data = getFormData();
           if (!data.fullName || !data.phone || !data.topic || !data.message) {
-            setStatus("اول فرم را کامل پر کنید یا یک بار ثبت کنید، سپس کپی را بزنید.");
+            setStatus("اول فرم را کامل پر کنید یا یک بار ثبت کنید، سپس کپی را بزنید.", "error");
             return;
           }
           if (!isValidPhone(data.phone)) {
-            setStatus("لطفا شماره تماس معتبر وارد کنید.");
+            setStatus("لطفا شماره تماس معتبر وارد کنید.", "error");
             return;
           }
           textToCopy = buildRequestText(data);
@@ -1114,9 +1485,9 @@ document.addEventListener("DOMContentLoaded", function () {
         }
 
         copyText(textToCopy).then(function () {
-          setStatus("متن درخواست کپی شد.");
+          setStatus("متن درخواست کپی شد.", "success");
         }).catch(function () {
-          setStatus("کپی انجام نشد. لطفا دستی انتخاب و کپی کنید.");
+          setStatus("کپی انجام نشد. لطفا دستی انتخاب و کپی کنید.", "error");
         });
       });
     }
